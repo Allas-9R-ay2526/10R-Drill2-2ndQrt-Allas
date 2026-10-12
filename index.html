@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>List in Python</title>
+
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #f5eee3;
+            color: #4e342e;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        form {
+            background-color: #fffaf2;
+            max-width: 350px;
+            margin: 40px auto 20px;
+            padding: 30px;
+            border: 2px solid #bc9a7a;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(78, 52, 46, 0.15);
+            text-align: center;
+        }
+
+        h3 {
+            color: #6f4e37;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #bc9a7a;
+            border-radius: 8px;
+            background-color: #fdf7ef;
+            color: #4e342e;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-color: #795548;
+            box-shadow: 0 0 5px rgba(121, 85, 72, 0.3);
+        }
+
+        input[type="button"] {
+            background-color: #795548;
+            color: #fffaf2;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        input[type="button"]:hover {
+            background-color: #5d4037;
+            transform: translateY(-2px);
+        }
+
+        #div1 {
+            max-width: 350px;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            color: #5d4037;
+            background-color: #fffaf2;
+            border-left: 5px solid #8d6e63;
+            border-radius: 8px;
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h3>Book Club Member Check</h3>
+
+        <input type="text" id="fname" placeholder="Enter your first name">
+        <input type="text" id="lname" placeholder="Enter your last name">
+
+        <input type="button" py-click="get_name" value="Search">
+    </form>
+
+    <div id="div1"></div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
